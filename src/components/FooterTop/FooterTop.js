@@ -1,5 +1,6 @@
 import React from 'react'
 import Container from '../Container/Container'
+import IconDownload from '../Lib/Svg/IconDownload'
 import './FooterTop.scss'
 
 function FooterTop() {
@@ -36,7 +37,7 @@ function FooterTop() {
                         Reference site about, giving information on its origins
                     </p>
                     <a className='site-footer__top-download-link' href='#link'>
-                        Скачать бриф
+                        <IconDownload /> Скачать бриф
                     </a>
                 </Container>
             </form>

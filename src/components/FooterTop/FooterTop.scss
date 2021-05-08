@@ -107,14 +107,10 @@
     }
 }
 
-.site-footer__top-download-link::before {
+.site-footer__top-download-link svg {
     width: 18px;
     height: 18px;
     margin-right: 10px;
-    // background-image: url('../../img/downoad-icon.svg');
-    background-repeat: no-repeat;
-    background-size: 18px;
-    content: '';
 }
 
 @media only screen and (max-width: 1200px) {
