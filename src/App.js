@@ -1,5 +1,11 @@
+import Footer from './components/Foooter/Footer.js'
+
 function App() {
-    return <>React app starter</>
+    return (
+        <>
+            <Footer />
+        </>
+    )
 }
 
 export default App
