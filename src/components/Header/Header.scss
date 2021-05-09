@@ -54,6 +54,12 @@
   opacity: 0.6;
 }
 
+.site-header__phonecall {
+  min-width: 20px;
+  min-height: 20px;
+  margin-right: 10px;
+}
+
 .site-header__night-mode::after {
   content: '';
   min-height: 22px;
@@ -63,10 +69,15 @@
   margin-left: 32px;
 }
 
-.site-header__phonecall {
-  min-width: 20px;
-  min-height: 20px;
-  margin-right: 10px;
+/* Night Mode: */
+.site-header_night-mode {
+  border: none;
+  background-color: transparent;
+}
+
+.site-header_sun-mode {
+  min-width: 24px;
+  min-height: 24px;
 }
 
 /* Select Language: */
@@ -78,7 +89,56 @@
   text-transform: uppercase;
   color: #00094a;
   background-color: transparent;
-  outline: none;
   margin-left: 30px;
   cursor: pointer;
+  outline: none;
+}
+
+/* Form Button: */
+.site-header__form-button {
+  display: block;
+  padding: 15px 30px;
+  margin-left: 35px;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #00094a;
+  border-radius: 3px;
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+
+.site-header__form-button:hover {
+  opacity: 0.8;
+}
+
+.site-header__form-button:active {
+  opacity: 0.6;
+}
+
+/* Hamburger Menu */
+.site-header__hamburger {
+  display: flex;
+  align-items: center;
+  border: none;
+  background-color: transparent;
+  margin: 0;
+  margin-left: 35px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  color: #00094a;
+  cursor: pointer;
+}
+
+.site-header__hamburger-img {
+  margin-left: 10px;
+}
+
+/* Sitenav */
+.sitenav {
+  display: none;
 }

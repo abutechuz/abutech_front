@@ -5,6 +5,7 @@ import Container from '../Container/Container'
 /* Svg Icons: */
 import LogoImg from '../Lib/Svg/Logo'
 import PhoneCall from '../Lib/Svg/PhoneCall'
+import Hamburger from '../Lib/Svg/Hamburger'
 
 function Header() {
   return (
@@ -20,7 +21,7 @@ function Header() {
               <PhoneCall className='site-header__phonecall' />
               +998 90 123 45 67
             </a>
-
+            <button className='site-header_night-mode'></button>
             <select
               className='site-header__select-lang'
               name='select-lang'
@@ -31,9 +32,22 @@ function Header() {
               <option value='ru'>Ru</option>
               <option value='en'>En</option>
             </select>
+
+            <a className='site-header__form-button' href=''>
+              ОСТАВИТЬ ЗАЯВКУ
+            </a>
           </div>
 
-          <nav className='sitenav'></nav>
+          <button className='site-header__hamburger'>
+            МЕНЮ
+            <Hamburger className='site-header__hamburger-img' />
+          </button>
+
+          <nav className='sitenav'>
+            <ul>
+              <li></li>
+            </ul>
+          </nav>
         </div>
       </Container>
     </header>
